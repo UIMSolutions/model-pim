@@ -16,3 +16,11 @@ class DPDSItembatchesAttributeEntity : DOOPEntity {
   }
 }
 mixin(EntityCalls!("PDSItembatchesAttributeEntity"))
+  
+version(test_model_pim) {
+  unittest {
+    assert(PDSItembatchesAttributeEntity);
+    
+    auto entity = PDSItembatchesAttributeEntity;
+  }
+}
