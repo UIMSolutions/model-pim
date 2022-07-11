@@ -16,3 +16,9 @@ class DPDSItembatchesAttributesGroupAttributeAssignmentEntity : DOOPEntity {
   }
 }
 mixin(EntityCalls!("PDSItembatchesAttributesGroupAttributeAssignmentEntity"));
+
+version(test_model_pim) {
+  unittest {
+    // Todo
+  }
+}
