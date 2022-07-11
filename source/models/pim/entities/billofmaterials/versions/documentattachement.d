@@ -16,3 +16,9 @@ class DBOMVersionDocumentAttachementEntity : DOOPEntity {
   }
 }
 mixin(EntityCalls!("BOMVersionDocumentAttachementEntity"))
+  
+version(test_model_pim) {
+  unittest {
+    // Todo
+  }
+}
