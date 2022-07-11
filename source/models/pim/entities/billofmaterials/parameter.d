@@ -16,3 +16,9 @@ class DBOMParameterEntity : DOOPEntity {
   }
 }
 mixin(EntityCalls!("BOMParameterEntity"))
+  
+version(test_model_pim) {
+  unittest {
+    // Todo
+  }
+}
