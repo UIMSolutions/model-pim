@@ -16,3 +16,9 @@ class DBOMVersionEntity : DOOPEntity {
   }
 }
 mixin(EntityCalls!("BOMVersionEntity"))
+  
+version(test_model_pim) {
+  unittest {
+    // Todo
+  }
+}
