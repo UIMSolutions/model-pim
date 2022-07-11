@@ -16,3 +16,9 @@ class DPDSRegionalsRegulatedProductEntity : DOOPEntity {
   }
 }
 mixin(EntityCalls!("PDSRegionalsRegulatedProductEntity"));
+
+version(test_model_pim) {
+  unittest {
+    // Todo
+  }
+}
