@@ -16,3 +16,9 @@ class DBOMLineEntity : DOOPEntity {
   }
 }
 mixin(EntityCalls!("BOMLineEntity"))
+
+version(test_model_pim) {
+  unittest {
+    // Todo
+  }
+}
