@@ -16,3 +16,9 @@ class DBOMItemSpecificHeaderEntity : DOOPEntity {
   }
 }
 mixin(EntityCalls!("BOMItemSpecificHeaderEntity"))
+  
+version(test_model_pim) {
+  unittest {
+    // Todo
+  }
+}
