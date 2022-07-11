@@ -16,3 +16,9 @@ class DBOMHeaderEntity : DOOPEntity {
   }
 }
 mixin(EntityCalls!("BOMHeaderEntity"))
+  
+version(test_model_pim) {
+  unittest {
+    // Todo
+  }
+}
