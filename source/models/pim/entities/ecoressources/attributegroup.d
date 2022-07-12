@@ -1,7 +1,7 @@
 module models.pim.entities.ecoressources.attributegroup;
 
 @safe:
-import models.pim;e
+import models.pim;
 
  version(test_model_pim) {
   unittest {
