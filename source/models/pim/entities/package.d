@@ -7,3 +7,5 @@ public import models.pim.entities.pds;
 public import models.pim.entities.pmfformulas;
 public import models.pim.entities.procproducts;
 public import models.pim.entities.unitofmeasures;
+
+public import models.pim.entities.purcpurchaseorderlinecds;
