@@ -11,6 +11,15 @@ class DBOMParameterEntity : DOOPEntity {
 
     this
       .addValues([
+        "CircularityCheckLevel": StringAttribute,
+        "MaximumBOMLevel": StringAttribute,
+        "AreQuantitiesOnBOMLinesAndDatesOnBOMVersionMandatory": StringAttribute,
+        "IsBOMAndVersionApprovalRemovalBlocked": StringAttribute,
+        "IsBOMEditingBlocked": StringAttribute,
+        "CircularityCheckStrategy": StringAttribute,
+        "FallbackCostCalculationGroupId": StringAttribute,
+        "BackingTable_BOMParametersRelationshipId": StringAttribute,
+        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute,
       ])
       .registerPath("pim_billofmaterials.parameters");
   }

@@ -11,6 +11,19 @@ class DBOMHeaderEntity : DOOPEntity {
 
     this
       .addValues([
+        "IsApproved": StringAttribute, 
+        "ApproverId": StringAttribute, 
+        "BOMId": StringAttribute, 
+        "ProductGroupId": StringAttribute, 
+        "BOMName": StringAttribute, 
+        "ProductionSiteId": StringAttribute, 
+        "ApproverPersonnelNumber": StringAttribute, 
+        "EngChgProductItemRecId": StringAttribute, 
+        "EngChgEngineeringBomReference": StringAttribute, 
+        "Relationship_ApprovingWorkerRelationshipId": StringAttribute, 
+        "Relationship_ProductionSiteRelationshipId": StringAttribute, 
+        "BackingTable_BOMTableRelationshipId": StringAttribute, 
+        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute,         
       ])
       .registerPath("pim_billofmaterials.headers");
   }
@@ -19,6 +32,7 @@ mixin(EntityCalls!("BOMHeaderEntity"))
   
 version(test_model_pim) {
   unittest {
-    // Todo
+    assert(BOMHeaderEntity);
+    auto entity = BOMHeaderEntity;
   }
 }

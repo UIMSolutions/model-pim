@@ -11,6 +11,10 @@ class DBOMConfigurationGroupEntity : DOOPEntity {
 
     this
       .addValues([
+        "GroupId":	StringAttribute, 
+        "GroupName":	StringAttribute, 
+        "BackingTable_ConfigGroupRelationshipId":	StringAttribute, 
+        "Relationship_PrimaryCompanyContextRelationshipId":	StringAttribute, 
       ])
       .registerPath("pim_billofmaterials.configuration.groups");
   }

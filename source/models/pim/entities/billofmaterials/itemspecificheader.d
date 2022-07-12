@@ -11,6 +11,28 @@ class DBOMItemSpecificHeaderEntity : DOOPEntity {
 
     this
       .addValues([
+        "IsApproved":	StringAttribute,
+        "IsActive":	StringAttribute,
+        "ApproverId":	StringAttribute,
+        "ApproverPersonnelNumber":	StringAttribute,
+        "BOMId":	StringAttribute,
+        "BOMName":	StringAttribute,
+        "ProductionSiteId":	StringAttribute,
+        "ManufacturedItemNumber":	StringAttribute,
+        "ProductColorId":	StringAttribute,
+        "ProductConfigurationId":	StringAttribute,
+        "ProductSizeId":	StringAttribute,
+        "ProductStyleId":	StringAttribute,
+        "ProductVersionId":	StringAttribute,
+        "VersionBOMId":	StringAttribute,
+        "VersionName":	StringAttribute,
+        "VersionSiteId":	StringAttribute,
+        "VersionIsApproved":	StringAttribute,
+        "VersionApproverId":	StringAttribute,
+        "Relationship_ApprovingWorkerRelationshipId":	StringAttribute,
+        "Relationship_ProductionSiteRelationshipId":	StringAttribute,
+        "BackingTable_BOMTableRelationshipId":	StringAttribute,
+        "Relationship_PrimaryCompanyContextRelationshipId":	StringAttribute,        
       ])
       .registerPath("pim_billofmaterials.item.specific.headers");
   }
