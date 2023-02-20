@@ -21,8 +21,6 @@ class DBOMConfigurationGroupEntity : DOOPEntity {
 }
 mixin(EntityCalls!("BOMConfigurationGroupEntity"))
   
-version(test_model_pim) {
-  unittest {
-    // Todo
-  }
-}
+version(test_model_pim) { unittest {
+  // Todo
+}}
