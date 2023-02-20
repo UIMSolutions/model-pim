@@ -7,7 +7,7 @@ class DBOMVersionEntity : DOOPEntity {
   mixin(EntityThis!("BOMVersionEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -7,7 +7,7 @@ class DBOMConfigurationGroupEntity : DOOPEntity {
   mixin(EntityThis!("BOMConfigurationGroupEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -7,23 +7,23 @@ class DBOMHeaderEntity : DOOPEntity {
   mixin(EntityThis!("BOMHeaderEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "IsApproved": StringAttribute, 
-        "ApproverId": StringAttribute, 
-        "BOMId": StringAttribute, 
-        "ProductGroupId": StringAttribute, 
+        "ApproverId": UUIDAttribute, 
+        "BOMId": UUIDAttribute, 
+        "ProductGroupId": UUIDAttribute, 
         "BOMName": StringAttribute, 
-        "ProductionSiteId": StringAttribute, 
+        "ProductionSiteId": UUIDAttribute, 
         "ApproverPersonnelNumber": StringAttribute, 
-        "EngChgProductItemRecId": StringAttribute, 
+        "EngChgProductItemRecId": UUIDAttribute, 
         "EngChgEngineeringBomReference": StringAttribute, 
-        "Relationship_ApprovingWorkerRelationshipId": StringAttribute, 
-        "Relationship_ProductionSiteRelationshipId": StringAttribute, 
-        "BackingTable_BOMTableRelationshipId": StringAttribute, 
-        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute,         
+        "Relationship_ApprovingWorkerRelationshipId": UUIDAttribute, 
+        "Relationship_ProductionSiteRelationshipId": UUIDAttribute, 
+        "BackingTable_BOMTableRelationshipId": UUIDAttribute, 
+        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute,         
       ])
       .registerPath("pim_billofmaterials.headers");
   }

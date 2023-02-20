@@ -7,7 +7,7 @@ class DBOMParameterEntity : DOOPEntity {
   mixin(EntityThis!("BOMParameterEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -17,9 +17,9 @@ class DBOMParameterEntity : DOOPEntity {
         "IsBOMAndVersionApprovalRemovalBlocked": StringAttribute,
         "IsBOMEditingBlocked": StringAttribute,
         "CircularityCheckStrategy": StringAttribute,
-        "FallbackCostCalculationGroupId": StringAttribute,
-        "BackingTable_BOMParametersRelationshipId": StringAttribute,
-        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute,
+        "FallbackCostCalculationGroupId": UUIDAttribute,
+        "BackingTable_BOMParametersRelationshipId": UUIDAttribute,
+        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute,
       ])
       .registerPath("pim_billofmaterials.parameters");
   }

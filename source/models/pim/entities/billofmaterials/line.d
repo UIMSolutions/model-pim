@@ -7,12 +7,12 @@ class DBOMLineEntity : DOOPEntity {
   mixin(EntityThis!("BOMLineEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "ConsumptionType": StringAttribute, 
-        "BOMId": StringAttribute, 
+        "BOMId": UUIDAttribute, 
         "Quantity": StringAttribute, 
         "QuantityDenominator": StringAttribute, 
         "LineType": StringAttribute, 
@@ -24,9 +24,9 @@ class DBOMLineEntity : DOOPEntity {
         "ConsumptionCalculationMethod": StringAttribute, 
         "ValidFromDate": StringAttribute, 
         "PhysicalProductHeight": StringAttribute, 
-        "SubBOMId": StringAttribute, 
+        "SubBOMId": UUIDAttribute, 
         "ItemNumber": StringAttribute, 
-        "SubRouteId": StringAttribute, 
+        "SubRouteId": UUIDAttribute, 
         "LineNumber": StringAttribute, 
         "RouteOperationNumber": StringAttribute, 
         "CatchWeightQuantity": StringAttribute, 
@@ -43,24 +43,24 @@ class DBOMLineEntity : DOOPEntity {
         "VendorAccountNumber": StringAttribute, 
         "PhysicalProductWidth": StringAttribute, 
         "IsResourceConsumptionUsed": StringAttribute, 
-        "ProductConfigurationId": StringAttribute, 
-        "ProductColorId": StringAttribute, 
-        "ProductSizeId": StringAttribute, 
-        "ProductStyleId": StringAttribute, 
-        "ProductVersionId": StringAttribute, 
-        "ConsumptionSiteId": StringAttribute, 
-        "ConsumptionWarehouseId": StringAttribute, 
-        "LineBOMId": StringAttribute, 
+        "ProductConfigurationId": UUIDAttribute, 
+        "ProductColorId": UUIDAttribute, 
+        "ProductSizeId": UUIDAttribute, 
+        "ProductStyleId": UUIDAttribute, 
+        "ProductVersionId": UUIDAttribute, 
+        "ConsumptionSiteId": UUIDAttribute, 
+        "ConsumptionWarehouseId": UUIDAttribute, 
+        "LineBOMId": UUIDAttribute, 
         "LineCreationSequenceNumber": StringAttribute, 
-        "ConfigurationGroupId": StringAttribute, 
-        "Relationship_RelationForeignKey1RelationshipId": StringAttribute, 
-        "Relationship_RouteHeaderRelationshipId": StringAttribute, 
-        "Relationship_SubBillOfMaterialsHeaderRelationshipId": StringAttribute, 
-        "Relationship_VendorRelationshipId": StringAttribute, 
-        "Relationship_BillOfMaterialsHeaderRelationshipId": StringAttribute, 
-        "Relationship_BOMConfigurationGroupRelationshipId": StringAttribute, 
-        "BackingTable_BOMRelationshipId": StringAttribute, 
-        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute,         
+        "ConfigurationGroupId": UUIDAttribute, 
+        "Relationship_RelationForeignKey1RelationshipId": UUIDAttribute, 
+        "Relationship_RouteHeaderRelationshipId": UUIDAttribute, 
+        "Relationship_SubBillOfMaterialsHeaderRelationshipId": UUIDAttribute, 
+        "Relationship_VendorRelationshipId": UUIDAttribute, 
+        "Relationship_BillOfMaterialsHeaderRelationshipId": UUIDAttribute, 
+        "Relationship_BOMConfigurationGroupRelationshipId": UUIDAttribute, 
+        "BackingTable_BOMRelationshipId": UUIDAttribute, 
+        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute,         
       ])
       .registerPath("pim_billofmaterials.line");
   }

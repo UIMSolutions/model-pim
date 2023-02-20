@@ -7,33 +7,33 @@ class DBOMVersionODataEntity : DOOPEntity {
   mixin(EntityThis!("BOMVersionODataEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
-        "ApproverId": StringAttribute.  
+        "ApproverId": UUIDAttribute.  
         "ApproverPersonnelNumber": StringAttribute.  
-        "BOMId": StringAttribute.  
+        "BOMId": UUIDAttribute.  
         "CatchWeightSize": StringAttribute.  
         "FromCatchWeightQuantity": StringAttribute.  
         "FromQuantity": StringAttribute.  
         "IsApproved": StringAttribute.  
         "IsSelectedForDesigner": StringAttribute.  
         "ManufacturedItemNumber": StringAttribute.  
-        "ProductColorId": StringAttribute.  
-        "ProductConfigurationId": StringAttribute.  
-        "ProductionSiteId": StringAttribute.  
-        "ProductSizeId": StringAttribute.  
-        "ProductStyleId": StringAttribute.  
-        "ProductVersionId": StringAttribute.  
+        "ProductColorId": UUIDAttribute.  
+        "ProductConfigurationId": UUIDAttribute.  
+        "ProductionSiteId": UUIDAttribute.  
+        "ProductSizeId": UUIDAttribute.  
+        "ProductStyleId": UUIDAttribute.  
+        "ProductVersionId": UUIDAttribute.  
         "ValidFromDate": StringAttribute.  
         "ValidToDate": StringAttribute.  
         "VersionName": StringAttribute.  
         "IsActive": StringAttribute.  
-        "Relationship_BOMHeaderRelationshipId": StringAttribute.  
-        "Relationship_ApprovingWorkerRelationshipId": StringAttribute.  
-        "BackingTable_BOMBillOfMaterialsVersionV3EntityRelationshipId": StringAttribute.  
-        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute. 
+        "Relationship_BOMHeaderRelationshipId": UUIDAttribute.  
+        "Relationship_ApprovingWorkerRelationshipId": UUIDAttribute.  
+        "BackingTable_BOMBillOfMaterialsVersionV3EntityRelationshipId": UUIDAttribute.  
+        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute. 
       ])
       .registerPath("pim_billofmaterials.versions.odata");
   }

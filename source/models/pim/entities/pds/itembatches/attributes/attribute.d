@@ -7,7 +7,7 @@ class DPDSItembatchesAttributeEntity : DOOPEntity {
   mixin(EntityThis!("BOMPDSItembatchesAttributeEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
