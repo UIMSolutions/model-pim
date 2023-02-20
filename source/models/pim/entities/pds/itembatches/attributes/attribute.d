@@ -6,7 +6,7 @@ import models.pim;
 class DPDSItembatchesAttributeEntity : DOOPEntity {
   mixin(EntityThis!("BOMPDSItembatchesAttributeEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

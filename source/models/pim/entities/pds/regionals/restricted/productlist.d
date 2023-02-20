@@ -6,7 +6,7 @@ import models.pim;
 class DPDSRegionalsRestrictedProductListEntity : DOOPEntity {
   mixin(EntityThis!("PDSRegionalsRestrictedProductListEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
