@@ -3,8 +3,6 @@ module models.pim.entities.ecoressources.products.attributes.groups.attributeass
 @safe:
 import models.pim;
 
-version(test_model_pim) {
-  unittest {
-    // Todo
-  }
-}
+version(test_model_pim) { unittest {
+  // Todo
+}}
