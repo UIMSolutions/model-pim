@@ -6,7 +6,7 @@ import models.pim;
 class DBOMParameterEntity : DOOPEntity {
   mixin(EntityThis!("BOMParameterEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

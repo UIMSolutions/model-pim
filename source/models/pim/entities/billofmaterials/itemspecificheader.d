@@ -6,7 +6,7 @@ import models.pim;
 class DBOMItemSpecificHeaderEntity : DOOPEntity {
   mixin(EntityThis!("BOMItemSpecificHeaderEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

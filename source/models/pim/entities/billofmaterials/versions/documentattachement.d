@@ -6,7 +6,7 @@ import models.pim;
 class DBOMVersionDocumentAttachementEntity : DOOPEntity {
   mixin(EntityThis!("BOMVersionDocumentAttachementEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
