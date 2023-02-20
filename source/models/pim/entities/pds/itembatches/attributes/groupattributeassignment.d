@@ -7,7 +7,7 @@ class DPDSItembatchesAttributesGroupAttributeAssignmentEntity : DOOPEntity {
   mixin(EntityThis!("PDSItembatchesAttributesGroupAttributeAssignmentEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -7,7 +7,7 @@ class DPDSRegionalsRegulatedProductListEntity : DOOPEntity {
   mixin(EntityThis!("PDSRegionalsRegulatedProductListEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
