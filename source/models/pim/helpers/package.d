@@ -1,1 +1,1 @@
-
+module models.pim.helpers;
