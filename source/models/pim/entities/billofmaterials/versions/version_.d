@@ -3,7 +3,7 @@ module models.pim.entities.billofmaterials.versions.version_;
 @safe:
 import models.pim;
 
-class DBOMVersionEntity : DOOPEntity {
+class DBOMVersionEntity : DEntity {
   mixin(EntityThis!("BOMVersionEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

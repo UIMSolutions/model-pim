@@ -3,7 +3,7 @@ module models.pim.entities.pds.regionals.regulated.productlist;
 @safe:
 import models.pim;
 
-class DPDSRegionalsRegulatedProductListEntity : DOOPEntity {
+class DPDSRegionalsRegulatedProductListEntity : DEntity {
   mixin(EntityThis!("PDSRegionalsRegulatedProductListEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

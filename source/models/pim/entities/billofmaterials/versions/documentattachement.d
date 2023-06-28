@@ -3,7 +3,7 @@ module models.pim.entities.billofmaterials.versions.documentattachement;
 @safe:
 import models.pim;
 
-class DBOMVersionDocumentAttachementEntity : DOOPEntity {
+class DBOMVersionDocumentAttachementEntity : DEntity {
   mixin(EntityThis!("BOMVersionDocumentAttachementEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

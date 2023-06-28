@@ -3,7 +3,7 @@ module models.pim.entities.pds.itembatches.attributes.attribute;
 @safe:
 import models.pim;
 
-class DPDSItembatchesAttributeEntity : DOOPEntity {
+class DPDSItembatchesAttributeEntity : DEntity {
   mixin(EntityThis!("BOMPDSItembatchesAttributeEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

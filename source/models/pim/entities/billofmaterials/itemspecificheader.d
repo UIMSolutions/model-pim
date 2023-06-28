@@ -3,7 +3,7 @@ module models.pim.entities.billofmaterials.itemspecificheader;
 @safe:
 import models.pim;
 
-class DBOMItemSpecificHeaderEntity : DOOPEntity {
+class DBOMItemSpecificHeaderEntity : DEntity {
   mixin(EntityThis!("BOMItemSpecificHeaderEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

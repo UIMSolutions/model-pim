@@ -3,7 +3,7 @@ module models.pim.entities.billofmaterials.line;
 @safe:
 import models.pim;
 
-class DBOMLineEntity : DOOPEntity {
+class DBOMLineEntity : DEntity {
   mixin(EntityThis!("BOMLineEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

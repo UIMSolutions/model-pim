@@ -3,7 +3,7 @@ module models.pim.entities.billofmaterials.parameter.d
 @safe:
 import models.pim;
 
-class DBOMParameterEntity : DOOPEntity {
+class DBOMParameterEntity : DEntity {
   mixin(EntityThis!("BOMParameterEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

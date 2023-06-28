@@ -3,7 +3,7 @@ module models.pim.entities.billofmaterials.configurationgroup;
 @safe:
 import models.pim;
 
-class DBOMConfigurationGroupEntity : DOOPEntity {
+class DBOMConfigurationGroupEntity : DEntity {
   mixin(EntityThis!("BOMConfigurationGroupEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
